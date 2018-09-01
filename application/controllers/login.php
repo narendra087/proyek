@@ -104,9 +104,12 @@ class Login extends CI_Controller {
 
 	public function home()
 	{
-		$this->load->view('header');
-		$this->load->view('profile');
-		$this->load->view('footer');
+		$nmr = $this->session->userdata('nmr');
+		$where = array(
+				 'nmr' => $nmr);
+		$data['karyawan'] = $this->model->karyawan('employee',$where)->result();
+		$this->load->view('user/navbar', $data);
+		$this->load->view('user/home', $data);
 	}
 
 

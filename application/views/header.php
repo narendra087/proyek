@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="header3-wrap">
                     <div class="header__logo">
                         <a href="#">
-                            <img src="<?php echo base_url()?>main/images/icon/logo-whitee.png" alt="CoolAdmin" />
+                            <img src="<?php echo base_url()?>main/images/icon/logo-white.png" alt="CoolAdmin" />
                         </a>
                     </div>
                     <div class="header__navbar">
@@ -237,7 +237,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                            <img src="<?php echo base_url()?>main/images/icon/logo-whitee.png" alt="CoolAdmin" />
+                            <img src="<?php echo base_url()?>main/images/icon/logo-white.png" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">

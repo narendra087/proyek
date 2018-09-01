@@ -39,10 +39,9 @@ class model extends CI_Model {
 		}
 	}
 
-	public function datakaryawan2() 
+	public function karyawan($table, $where) 
 	{
-		$data = $this->db->get('employee');
-		return $data->result();
+		return $this->db->get_where($table, $where);
 	}
 
 	public function datakaryawan() 
@@ -62,7 +61,7 @@ class model extends CI_Model {
 		return $upd;
 	}
 
-	//=========================================== USER
+	//======================== USER =====================
 
 	public function add($data) {
 		$this->db->insert('employee', $data);
