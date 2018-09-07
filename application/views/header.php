@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="header__navbar">
                         <ul class="list-unstyled">
                             <li class="has-sub">
-                                <a href="#">
+                                <a href="<?php echo base_url()?>login/homeadmin/">
                                     <i class="fas fa-users"></i>Employee Data
                                     <span class="bot-line"></span>
                                 </a>
@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </ul>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="<?php echo base_url()?>admin/confirmation">
                                     <i class="fas fa-copy"></i>
                                     <span class="bot-line"></span>Confirmation
                                 </a>                                

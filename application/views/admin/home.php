@@ -199,7 +199,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="title-5 m-b-35">Data Karyawan</h3>
+                            <h3 class="title-5 m-b-35">Employee Data</h3>
                             <!-- <div class="table-data__tool">
                                 <div class="table-data__tool-left">
                                     <div class="rs-select2--light rs-select2--md">
@@ -238,12 +238,6 @@
                                 <table class="table table-data2">
                                     <thead>
                                         <tr>
-                                            <!-- <th>
-                                                <label class="au-checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="au-checkmark"></span>
-                                                </label>
-                                            </th> -->
                                             <th>Name</th>
                                             <th>Employee&nbsp;ID</th>
                                             <th>Email</th>
@@ -257,12 +251,6 @@
                                     <?php foreach ($krywn as $k){ ?>
                                     <tbody>
                                         <tr class="tr-shadow">
-                                            <!-- <td>
-                                                <label class="au-checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="au-checkmark"></span>
-                                                </label>
-                                            </td> -->
                                             <td><?php echo $k->nama; ?></td>
                                             <td class="desc"><?php echo $k->nmr; ?></td>
                                             <td>

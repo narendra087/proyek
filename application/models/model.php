@@ -44,6 +44,17 @@ class model extends CI_Model {
 		return $this->db->get_where($table, $where);
 	}
 
+	public function confirm($table, $where) 
+	{
+		return $this->db->get_where($table, $where);
+	}
+
+	public function dataconfirm() 
+	{
+		$data = $this->db->get('updater', '4', $this->uri->segment(3));
+		return $data->result();
+	}
+
 	public function datakaryawan() 
 	{
 		$data = $this->db->get('employee', '4', $this->uri->segment(3));
@@ -53,6 +64,12 @@ class model extends CI_Model {
 	public function prof($where="")
 	{
 		$data = $this->db->query('select * from employee '. $where);
+		return $data->result_array();
+	}
+
+	public function updater($where="")
+	{
+		$data = $this->db->query('select * from updater '. $where);
 		return $data->result_array();
 	}
 
